@@ -1,4 +1,4 @@
-# Clickstream Segmentation and Temporal Prediction Models
+# Customer-Genomics: Clickstream Segmentation and Temporal Prediction Models
 
 
 

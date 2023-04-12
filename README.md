@@ -1,4 +1,6 @@
-# Customer-Journey
+# Clickstream Segmentation and Temporal Prediction Models
+
+
 
 This project aims to segment customer behavior based on clickstream data and predict future events in the customer journey. We will use machine learning models, including XGBoost, Random Forest, Decision Trees, RNNs, LSTMs, Transformers, and VAE autoencoders to accomplish this task.
 

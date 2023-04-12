@@ -1,28 +1,65 @@
-# Customer-Genomics: Clickstream Segmentation and Temporal Prediction Models
+Customer Genomics: Clickstream Segmentation and Temporal Prediction using Neural Nets
 
+# Introduction
 
+In this codebase, we provide implementations of various segmentation techniques and temporal sequence prediction methods using neural nets on clickstream data. The aim is to provide consumer startups with tools and techniques for effectively segmenting and analyzing clickstream data and predicting future user behavior based on their past interactions.
 
-This project aims to segment customer behavior based on clickstream data and predict future events in the customer journey. We will use machine learning models, including XGBoost, Random Forest, Decision Trees, RNNs, LSTMs, Transformers, and VAE autoencoders to accomplish this task.
+# Segmentation Methods
 
-# Data
+The segmentation folder contains implementations of various models and techniques, including:
 
-The data for this project will consist of customer clickstream data, including user events, timestamps, and other relevant features. We will use this data to build a segmentation model that identifies patterns and clusters in customer behavior.
+Logistic Regression
+Decision Tree
+Random Forest
+XGBoost
+LSTMs
+Clustering Models
+Markov Models
+Autoencoders
 
-We will also use the data to build a temporal prediction model that predicts future events in the customer journey based on past behavior.
+We have provided scripts for data preprocessing, feature engineering, and model training for each of these techniques. We also demonstrate how to implement a consensus approach, where the outputs of multiple models are combined to generate a final, more accurate segmentation.
 
-# Methodology
+# Temporal Sequence Prediction Methods
 
-## clickstream_segments are for segmenting customer behaviour
-## sequence_models are for temporal predictions 
+The temporal_prediction folder contains implementations of various models and techniques, including:
 
-We will use a combination of supervised and unsupervised machine learning techniques to segment customer behavior and predict future events. Specifically, we will use XGBoost, Random Forest, and Decision Trees for segmentation and RNNs, LSTMs, Transformers, and VAE autoencoders for temporal prediction.
+LSTMs
+Markov Models
+Gated Recurrent Units (GRUs)
+Transformer Models
+Temporal Convolutional Networks (TCNs)
+Echo State Networks (ESNs)
+Sequence-to-Sequence (Seq2Seq) Models
+We have provided scripts for data preprocessing, feature engineering, and model training for each of these techniques. We also demonstrate how to predict future user behavior based on their past interactions.
 
-We will train these models on historical clickstream data and evaluate their performance using metrics such as accuracy, precision, recall, and F1 score.
+# Dependencies
 
-# Results
+The codebase requires the following dependencies:
 
-The results of this project will provide insights into customer behavior and help us better understand and predict their future actions. This will allow us to improve our customer experience and optimize our marketing and sales strategies.
+Python 3.6 or higher
+pandas
+numpy
+scikit-learn
+tensorflow
+keras
+matplotlib
+seaborn
+To install the required dependencies, run the following command:
+
+Copy code
+pip install -r requirements.txt
+
+# Usage
+
+To use the codebase, follow these steps:
+
+Prepare your clickstream data and place it in the data folder.
+Ensure that it includes a diverse range of user behaviors, travel package preferences, and demographic information.
+Run the preprocessing and feature engineering scripts to prepare the data for ingestion into the models. We have created two modules, data_preprocessing.py and feature_engineering.py, inside the src directory containing the necessary functions for these tasks.
+Train individual models using the provided scripts and evaluate their performance using cross-validation.
+Implement the consensus approach for model building, combining the outputs of multiple models for a more accurate and robust segmentation or prediction.
+Analyze the segments and use the insights to develop targeted marketing strategies or improve the user experience.
 
 # Conclusion
 
-In conclusion, this project aims to segment customer behavior and predict future events in the customer journey using machine learning models. The results of this project will provide valuable insights into customer behavior and help us improve our customer experience and business strategies
+By effectively analyzing unstructured clickstream data, businesses can gain valuable insights into customer behavior, preferences, and trends, which can be leveraged to develop targeted marketing strategies, improve the user experience, and foster customer loyalty. By embracing advanced segmentation techniques and continuously refining their approach, startups can better understand their customers, stay ahead of the competition, and achieve lasting success in the ever-evolving digital marketplace

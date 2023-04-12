@@ -1,4 +1,4 @@
-Customer Genomics: Clickstream Segmentation and Temporal Prediction using Neural Nets
+# Customer Genomics: Clickstream Segmentation and Temporal Prediction using Neural Nets
 
 # Introduction
 
